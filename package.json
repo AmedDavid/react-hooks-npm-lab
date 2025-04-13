@@ -2,9 +2,11 @@
   "name": "react-hooks-npm-lab",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "test": "jest"
-  },
+"scripts": {
+  "test": "echo 'Hello World!'",
+  "start": "serve",
+  "build": "esbuild index.js --bundle --outfile=dist/out.js"
+},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -18,7 +20,6 @@
     ]
   },
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/learn-co-curriculum/react-hooks-npm-lab.git"
@@ -29,5 +30,10 @@
     "url": "https://github.com/learn-co-curriculum/react-hooks-npm-lab/issues"
   },
   "homepage": "https://github.com/learn-co-curriculum/react-hooks-npm-lab#readme",
-  "keywords": []
+  "keywords": [],
+  "description": "## Learning Goals",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "serve": "^14.2.4"
+  }
 }
